@@ -2,6 +2,13 @@ package com.next.fmg.syncro.model;
 
 public class RetailerAccount {
 	
+	/*
+	 * Estado de retailers
+	 * 0 = Descargado de magento, quedan en estado 0 los que se leen del json que recibo de magento
+	 * 1 = ya leido, una vez que los leo los marco en estado 1
+	 * 2 = como novedad para informar, solo se envían a magento los que están en estado 2
+	 */
+	
 	private String distributor_code;
 	private String property_name;
 	private String store_id_ERP;

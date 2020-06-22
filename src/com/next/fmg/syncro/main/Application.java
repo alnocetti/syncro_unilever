@@ -15,8 +15,8 @@ public class Application {
 
 	public static String CLIENT_ID;
 	public static String CLIENT_SECRET;
-	public static String DIR_LECTURA;
-	public static String DIR_ORIGINAL;
+	public static String DIR_LECTURA_DBF;
+	public static String DIR_LECTURA_JSON;
 	public static String DIR_JSON;
 	
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
@@ -29,12 +29,13 @@ public class Application {
 		
 		CLIENT_ID = doc.getElementsByTagName("CLIENT_ID").item(0).getTextContent();
 		CLIENT_SECRET = doc.getElementsByTagName("CLIENT_SECRET").item(0).getTextContent();
-		DIR_LECTURA = doc.getElementsByTagName("DIR_LECTURA").item(0).getTextContent();
-		DIR_ORIGINAL = doc.getElementsByTagName("DIR_ORIGINAL").item(0).getTextContent();
+		DIR_LECTURA_DBF = doc.getElementsByTagName("DIR_LECTURA_DBF").item(0).getTextContent();
+		DIR_LECTURA_JSON = doc.getElementsByTagName("DIR_LECTURA_JSON").item(0).getTextContent();
 		DIR_JSON = doc.getElementsByTagName("DIR_JSON").item(0).getTextContent();
 		
 		//TEST POST RETAILER ACCOUNT
 		ControllerRetailers.getInstance().postRetailers();
+		ControllerRetailers.getInstance().downloadRetailers();
 		
 	}
 

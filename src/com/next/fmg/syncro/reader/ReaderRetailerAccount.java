@@ -35,13 +35,13 @@ public class ReaderRetailerAccount {
 		
 		try {
 			
-			reader = new DBFReader(new FileInputStream(Application.DIR_LECTURA + "wbcuenta.dbf"));
+			reader = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 		
 			DBFRow row;
 			
 			while ((row = reader.nextRow()) != null) {
 				
-				if(row.getInt("CLIGRABO") != 1) {
+				if(row.getInt("CLIGRABO") == 2) {
 
 					RetailerAccount retailer = new RetailerAccount();
 					
@@ -113,7 +113,7 @@ public class ReaderRetailerAccount {
 		
 		try {
 			
-			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA + "wbcuenta.dbf"));
+			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 			
 			writer.go(getNroRegistro(ra));	
 							
@@ -140,7 +140,7 @@ public class ReaderRetailerAccount {
 
 		// create a DBFReader object
 		try {
-			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LECTURA + "wbcuenta.dbf"));
+			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

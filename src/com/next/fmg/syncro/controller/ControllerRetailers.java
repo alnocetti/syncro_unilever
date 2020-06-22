@@ -1,5 +1,6 @@
 package com.next.fmg.syncro.controller;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,12 +9,14 @@ import com.next.fmg.syncro.model.RetailerAccount;
 import com.next.fmg.syncro.reader.ReaderRetailerAccount;
 import com.next.fmg.syncro.rest.RestClient;
 import com.next.fmg.syncro.rest.WebResponse;
+import com.next.fmg.syncro.writer.WriterRetailerAccount;
 
 public class ControllerRetailers {
 	
 	public static ControllerRetailers instance;
 	public RestClient restClient;
 	public ReaderRetailerAccount reader;
+	public WriterRetailerAccount writer;
 	
 	  public static ControllerRetailers getInstance() throws RuntimeException {
 	        
@@ -26,7 +29,7 @@ public class ControllerRetailers {
 			super();
 			this.restClient = new RestClient();
 			this.reader = new ReaderRetailerAccount();
-			
+			this.writer = new WriterRetailerAccount();
 			// TODO Auto-generated constructor stub
 		}
 		
@@ -47,5 +50,13 @@ public class ControllerRetailers {
 			}
 			
 			return respuestas;
+		}
+		
+		public void downloadRetailers() throws FileNotFoundException {
+			
+			System.out.println("<-- downloadRetailers");
+			
+			this.writer.downloadRetaliers();
+			
 		}
 }

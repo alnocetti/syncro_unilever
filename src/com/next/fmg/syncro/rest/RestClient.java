@@ -33,7 +33,7 @@ public class RestClient {
 		
 		while(intentos <= 1) {
 		
-			System.out.println("<-- postRetailerAccount(" + ra.getStore_id_ERP() + ")");
+			System.out.println("<-- postRetailerAccount(" + ra.getProperty_name() + ")");
 
 		try {
 		
