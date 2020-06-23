@@ -5,6 +5,7 @@
   "Store_Status": 1,
   "rejection_reason": "",
   "cuit_dni_id": "18111222",
+  "document_type_id": "0",
   "ingresos_brutos": "",
   "customer_type": "KIOSCO",
   "street": "AV. MITRE",
