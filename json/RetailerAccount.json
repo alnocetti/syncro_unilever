@@ -5,6 +5,7 @@
   "Store_Status": 0,
   "rejection_reason": "NO PAGA BIEN",
   "cuit_dni_id": "22333444",
+  "document_type_id": "0",
   "ingresos_brutos": "",
   "customer_type": "AUTOSERVICIO",
   "street": "TRIBULATO",
