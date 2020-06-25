@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -59,7 +58,7 @@ public class WriterRetailerAccount {
 				
 				writer = new DBFWriter(new File(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 				
-				Object rowData[] = new Object[28];
+				Object rowData[] = new Object[29];
 				
 				rowData[0] = retailer.getDistributor_code();
 				rowData[1] = retailer.getProperty_name();
@@ -89,6 +88,7 @@ public class WriterRetailerAccount {
 				rowData[25] = retailer.getCustomer_pending_payment();
 				rowData[26] = 0;
 				rowData[27] = "";
+				rowData[28] = retailer.getErp_seller();
 				
 				writer.addRecord(rowData);
 				
@@ -109,69 +109,12 @@ public class WriterRetailerAccount {
 		DBFRow row;
 		
 		while ((row = reader.nextRow()) != null) {
-			/*
-			if(row.getString("CLICODDIS").equals(retailer.getDistributor_code())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			
-			if(row.getString("CLIRAZSOC").equals(retailer.getProperty_name())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLICUIT").equals(retailer.getCuit_dni_id())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if( row.getString("CLITABCUIT").equals(retailer.getCuit_dni_id())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIIIBB").equals(retailer.getIngresos_brutos())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLITABTIPO").equals(retailer.getCustomer_type())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIDOMICI").equals(retailer.getStreet())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIALTURA").equals(retailer.getNumber())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLILOCALI").equals(retailer.getNeighborhood())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if( row.getString("CLIPARTIDO").equals(retailer.getDistrict())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIPROVIN").equals(retailer.getProvince())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if( row.getString("CLIPAIS").equals(retailer.getCountry())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIPOSTAL").equals(retailer.getPostal_code())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLITELEF").equals(retailer.getPhone_number())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLITELEX").equals(retailer.getMobile_number())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIMAIL").equals(retailer.getEmail())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLINOMBRE").equals(retailer.getFirstname())){
-				System.out.println("Igual codigo distribuidor \n");
-			}
-			if(row.getString("CLIAPELLI").equals(retailer.getSurname())){
-				System.out.println("Igual codigo distribuidor \n");
-			}*/
-			
+		
 			if(row.getString("CLICODDIS").equals(retailer.getDistributor_code()) &&
 			   row.getString("CLIRAZSOC").equals(retailer.getProperty_name()) &&
 			   row.getString("CLICUIT").equals(retailer.getCuit_dni_id()) &&
 			   row.getInt("CLITABCUIT")==Integer.valueOf(retailer.getDocument_type_id()) &&
 			   row.getString("CLIIIBB").equals(retailer.getIngresos_brutos()) &&
-			   row.getInt("CLITABTIPO")==Integer.valueOf(retailer.getCustomer_type()) &&
 			   row.getString("CLIDOMICI").equals(retailer.getStreet()) &&
 			   row.getString("CLIALTURA").equals(retailer.getNumber()) &&		   
 			   row.getString("CLILOCALI").equals(retailer.getNeighborhood()) &&

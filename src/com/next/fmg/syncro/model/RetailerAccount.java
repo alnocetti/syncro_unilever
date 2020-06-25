@@ -14,6 +14,7 @@ public class RetailerAccount {
 	private String store_id_ERP;
 	private int Store_Status;
 	private String rejection_reason;
+	private String erp_seller;
 	private String cuit_dni_id;
 	private String document_type_id;
 	private String ingresos_brutos;
@@ -88,6 +89,17 @@ public class RetailerAccount {
 
 	public void setRejection_reason(String rejection_reason) {
 		this.rejection_reason = rejection_reason;
+	}
+
+
+	
+	public String getErp_seller() {
+		return erp_seller;
+	}
+
+
+	public void setErp_seller(String erp_seller) {
+		this.erp_seller = erp_seller;
 	}
 
 

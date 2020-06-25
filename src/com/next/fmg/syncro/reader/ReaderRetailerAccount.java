@@ -93,6 +93,8 @@ public class ReaderRetailerAccount {
 					
 					retailer.setCustomer_pending_payment(row.getFloat("CLIENVPAYM"));
 					
+					retailer.setErp_seller(row.getString("CLIPREVEN"));
+					
 					retailers.add(retailer);
 				}
 				
