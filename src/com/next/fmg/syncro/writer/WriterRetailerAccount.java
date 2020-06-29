@@ -32,7 +32,7 @@ public class WriterRetailerAccount {
 		
 		//Read json into array
 		
-		SimpleDateFormat format = new SimpleDateFormat("ddMMyyyy");
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 		
 		String file = Application.DIR_LECTURA_JSON + format.format(new Date()) + "_Retailer.json";
 		

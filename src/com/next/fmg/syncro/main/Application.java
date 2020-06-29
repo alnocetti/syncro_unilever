@@ -9,6 +9,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
+import com.next.fmg.syncro.controller.ControllerCatalog;
 import com.next.fmg.syncro.controller.ControllerRetailers;
 
 public class Application {
@@ -18,6 +19,7 @@ public class Application {
 	public static String DIR_LECTURA_DBF;
 	public static String DIR_LECTURA_JSON;
 	public static String DIR_JSON;
+	public static String DISTRIBUTOR_CODE;
 	
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		// TODO Auto-generated method stub
@@ -32,9 +34,15 @@ public class Application {
 		DIR_LECTURA_DBF = doc.getElementsByTagName("DIR_LECTURA_DBF").item(0).getTextContent();
 		DIR_LECTURA_JSON = doc.getElementsByTagName("DIR_LECTURA_JSON").item(0).getTextContent();
 		DIR_JSON = doc.getElementsByTagName("DIR_JSON").item(0).getTextContent();
+		DISTRIBUTOR_CODE = doc.getElementsByTagName("DISTRIBUTOR_CODE").item(0).getTextContent();
 		
 		//TEST POST RETAILER ACCOUNT
+		
+		//ControllerCatalog.getInstance().postCatalog();
+		
+		
 		ControllerRetailers.getInstance().postRetailers();
+		ControllerRetailers.getInstance().downloadRetailersFTP();
 		ControllerRetailers.getInstance().downloadRetailers();
 		
 	}

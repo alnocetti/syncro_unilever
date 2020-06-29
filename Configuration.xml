@@ -6,9 +6,7 @@
 	<DIR_JSON>./json/</DIR_JSON>
 	<DIR_LECTURA_DBF>./dbfs/</DIR_LECTURA_DBF>
 	<DIR_LECTURA_JSON>./json/</DIR_LECTURA_JSON>
-	<FILE>dtitems.dbf</FILE>
-	<FILE>cccuenta.dbf</FILE>
-	<FILE>dtitmedida.dbf</FILE>
+	<DISTRIBUTOR_CODE>10310151</DISTRIBUTOR_CODE>
 <!-- 	<FILE>dtpedcab.dbf</FILE> -->
 <!-- 	<FILE>dtpedcpo.dbf</FILE> -->
 </Empresa>
