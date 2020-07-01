@@ -12,7 +12,7 @@ public class RetailerAccount {
 	private String distributor_code;
 	private String property_name;
 	private String store_id_ERP;
-	private int Store_Status;
+	private int store_Status;
 	private String rejection_reason;
 	private String erp_seller;
 	private String cuit_dni_id;
@@ -21,9 +21,9 @@ public class RetailerAccount {
 	private String customer_type;
 	private String street;
 	private String number;
-	private String Neighborhood;
-	private String District;
-	private String Province;
+	private String neighborhood;
+	private String district;
+	private String province;
 	private String country;
 	private String postal_code;
 	private String phone_number;
@@ -73,12 +73,12 @@ public class RetailerAccount {
 
 
 	public int getStore_Status() {
-		return Store_Status;
+		return store_Status;
 	}
 
 
 	public void setStore_Status(int store_Status) {
-		Store_Status = store_Status;
+		store_Status = store_Status;
 	}
 
 
@@ -164,32 +164,32 @@ public class RetailerAccount {
 
 
 	public String getNeighborhood() {
-		return Neighborhood;
+		return neighborhood;
 	}
 
 
 	public void setNeighborhood(String neighborhood) {
-		Neighborhood = neighborhood;
+		neighborhood = neighborhood;
 	}
 
 
 	public String getDistrict() {
-		return District;
+		return district;
 	}
 
 
 	public void setDistrict(String district) {
-		District = district;
+		district = district;
 	}
 
 
 	public String getProvince() {
-		return Province;
+		return province;
 	}
 
 
 	public void setProvince(String province) {
-		Province = province;
+		province = province;
 	}
 
 

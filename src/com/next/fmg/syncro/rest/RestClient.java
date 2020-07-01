@@ -10,11 +10,11 @@ import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.Catalog;
 import com.next.fmg.syncro.model.Product;
@@ -45,7 +45,7 @@ public class RestClient {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
 			
-			url = new URL("https://apiuat.unileverservices.com/sigma-magento-v1/sigmaapi/retailerRegisterationStatus");//your url i.e fetch data from .
+			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/retailer/registration/status");//your url i.e fetch data from .
 			
 			conn = (HttpURLConnection) url.openConnection();
 			
@@ -132,20 +132,22 @@ public class RestClient {
 		
 		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddhhmm");
 		
-		WebResponse webResponse = new WebResponse();
+		WebResponse webResponse = new WebResponse();	
+		
+		Catalog response = new Catalog();
 		
 		intentos = 0;
 		
 		while(intentos <= 1) {
 		
-			System.out.println("<-- postCatalog()");
+			//System.out.println("<-- postCatalog()");
 
 		try {
 		
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
-			
-			url = new URL("https://apiuat.unileverservices.com/sigma-magento-v1/sigmaapi/catalogDetail");//your url i.e fetch data from .
+			//url = new URL("https://apiuat.unileverservices.com/sigma-magento-v1/sigmaapi/catalogDetail");//your url i.e fetch data from .
+			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/catalog");
 			
 			conn = (HttpURLConnection) url.openConnection();
 			
@@ -184,6 +186,7 @@ public class RestClient {
 			    _is = new InputStreamReader(conn.getErrorStream());
 			}
 			
+			//Leo respuesta
 			br = new BufferedReader(_is);
 			
 			StringBuilder builder = new StringBuilder();
@@ -202,13 +205,21 @@ public class RestClient {
 			
 			if (conn.getResponseCode() < conn.HTTP_BAD_REQUEST) {
 				
-				webResponse.setResponseMessage(conn.getResponseMessage() + ", Retailer enviado correctamente");
+				/** Ver que hacer con este json que vuelve, es igual al que enviamos? **/
+				
+				TypeToken<Catalog> token = new TypeToken<Catalog>() {};
+				
+				response =  gson.fromJson(builder.toString(),  token.getType());
+				
+				/*******************************************************************/
+				
+				webResponse.setResponseMessage(conn.getResponseMessage() + ", Catalog enviado correctamente");
 				
 			} else {
 			     /* error from server */
 				webResponse.setResponseMessage(aux);
 				
-			}
+			}			
 		
 			conn.disconnect();
 

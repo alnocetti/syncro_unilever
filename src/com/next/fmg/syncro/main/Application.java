@@ -36,14 +36,13 @@ public class Application {
 		DIR_JSON = doc.getElementsByTagName("DIR_JSON").item(0).getTextContent();
 		DISTRIBUTOR_CODE = doc.getElementsByTagName("DISTRIBUTOR_CODE").item(0).getTextContent();
 		
-		//TEST POST RETAILER ACCOUNT
 		
-		//ControllerCatalog.getInstance().postCatalog();
+		ControllerCatalog.getInstance().postCatalog();
 		
 		
-		ControllerRetailers.getInstance().postRetailers();
-		ControllerRetailers.getInstance().downloadRetailersFTP();
-		ControllerRetailers.getInstance().downloadRetailers();
+		//ControllerRetailers.getInstance().postRetailers();
+		//ControllerRetailers.getInstance().downloadRetailersFTP();
+		//ControllerRetailers.getInstance().downloadRetailers();
 		
 	}
 

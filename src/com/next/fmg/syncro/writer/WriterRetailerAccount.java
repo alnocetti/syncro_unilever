@@ -46,6 +46,11 @@ public class WriterRetailerAccount {
 		
 		retailers = gson.fromJson(reader, token);
 		
+		if(retailers == null) {
+			System.out.println("Nothing to download");
+			return;
+		}
+		
 		// Write records into dbf
 	
 		DBFWriter writer = null;
