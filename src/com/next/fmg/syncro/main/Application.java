@@ -42,14 +42,14 @@ public class Application {
 		//ControllerRetailers.getInstance().postRetailers();
 		
 		//Recepción retailers
-		//ControllerRetailers.getInstance().downloadRetailersFTP();
-		//ControllerRetailers.getInstance().downloadRetailers();
+		ControllerRetailers.getInstance().downloadRetailersFTP();
+		ControllerRetailers.getInstance().downloadRetailers();
 		
 		//Envio catalogo
 		//ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
-		ControllerInventory.getInstance().postInventory();
+		//ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
 		//ControllerPrices.getInstance().postPrices();

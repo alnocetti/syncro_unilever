@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.yasas.xbase4j.XBase;
@@ -86,6 +88,8 @@ public class ReaderCatalog {
 		
 		try {
 			
+			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbitems.dbf"));
 			
 			writer.go(getNroRegistro(product));	
@@ -93,6 +97,8 @@ public class ReaderCatalog {
 			writer.setValue("itmrespues", response);
 			
 			writer.setValue("itmgrabo", 1);
+			
+			writer.setValue("itmaudsync", formatAud.format(new Date()));
 											
 			writer.closeQuietly();			
 			

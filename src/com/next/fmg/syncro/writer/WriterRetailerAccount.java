@@ -35,6 +35,9 @@ public class WriterRetailerAccount {
 		
 		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 		
+		SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+		
 		String file = Application.DIR_LECTURA_JSON + format.format(new Date()) + "_Retailer.json";
 		
 		List<RetailerAccount>retailers = new ArrayList<RetailerAccount>();
@@ -78,7 +81,7 @@ public class WriterRetailerAccount {
 				
 				writer = new DBFWriter(new File(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 				
-				Object rowData[] = new Object[29];
+				Object rowData[] = new Object[31];
 				
 				rowData[0] = retailer.getDistributor_code();
 				rowData[1] = retailer.getProperty_name();
@@ -101,7 +104,7 @@ public class WriterRetailerAccount {
 				rowData[18] = retailer.getFirstname();
 				rowData[19] = retailer.getSurname();
 				rowData[20] = retailer.getStore_id_ERP();
-				rowData[21] = retailer.getStore_Status();
+				rowData[21] = Integer.valueOf(retailer.getStore_Status());
 				rowData[22] = retailer.getRejection_reason();
 				rowData[23] = retailer.getCustomer_credit_available();
 				rowData[24] = retailer.getCustomer_total_credit();	
@@ -109,7 +112,8 @@ public class WriterRetailerAccount {
 				rowData[26] = 0;
 				rowData[27] = "";
 				rowData[28] = retailer.getErp_seller();
-				
+				rowData[29] = "";
+				rowData[30]	= formatAud.format(new Date());	
 				writer.addRecord(rowData);
 				
 				writer.close();

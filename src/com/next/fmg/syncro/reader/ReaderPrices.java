@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.yasas.xbase4j.XBase;
 import org.yasas.xbase4j.XBaseFile;
@@ -100,6 +102,8 @@ public class ReaderPrices {
 		
 		try {
 			
+			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			
 			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbprecio.dbf"));
 			
 			writer.go(getNroRegistro(price,ean));	
@@ -107,7 +111,9 @@ public class ReaderPrices {
 			writer.setValue("prerespues", response);
 			
 			writer.setValue("pregrabo", 1);
-											
+			
+			writer.setValue("preaudsync", formatAud.format(new Date()));
+							
 			writer.closeQuietly();			
 			
 		} catch (IOException e) {

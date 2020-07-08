@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.yasas.xbase4j.XBase;
@@ -114,6 +116,8 @@ public class ReaderRetailerAccount {
 	public void saveResponse(RetailerAccount ra, String response) {
 		
 		try {
+
+			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			
 			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbcuenta.dbf"));
 			
@@ -122,6 +126,8 @@ public class ReaderRetailerAccount {
 			writer.setValue("CLIRESPUES", response);
 			
 			writer.setValue("CLIGRABO", 1);
+			
+			writer.setValue("cliaudsync", formatAud.format(new Date()));
 											
 			writer.closeQuietly();			
 			
