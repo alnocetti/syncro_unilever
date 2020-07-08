@@ -10,6 +10,8 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 import com.next.fmg.syncro.controller.ControllerCatalog;
+import com.next.fmg.syncro.controller.ControllerInventory;
+import com.next.fmg.syncro.controller.ControllerPrices;
 import com.next.fmg.syncro.controller.ControllerRetailers;
 
 public class Application {
@@ -36,13 +38,21 @@ public class Application {
 		DIR_JSON = doc.getElementsByTagName("DIR_JSON").item(0).getTextContent();
 		DISTRIBUTOR_CODE = doc.getElementsByTagName("DISTRIBUTOR_CODE").item(0).getTextContent();
 		
-		
-		ControllerCatalog.getInstance().postCatalog();
-		
-		
+		//Envio retailers
 		//ControllerRetailers.getInstance().postRetailers();
+		
+		//Recepción retailers
 		//ControllerRetailers.getInstance().downloadRetailersFTP();
 		//ControllerRetailers.getInstance().downloadRetailers();
+		
+		//Envio catalogo
+		//ControllerCatalog.getInstance().postCatalog();
+		
+		//Envio inventario
+		ControllerInventory.getInstance().postInventory();
+		
+		//Envio precios
+		//ControllerPrices.getInstance().postPrices();
 		
 	}
 

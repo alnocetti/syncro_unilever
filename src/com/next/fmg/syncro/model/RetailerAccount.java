@@ -12,7 +12,7 @@ public class RetailerAccount {
 	private String distributor_code;
 	private String property_name;
 	private String store_id_ERP;
-	private int store_Status;
+	private String Store_Status;
 	private String rejection_reason;
 	private String erp_seller;
 	private String cuit_dni_id;
@@ -21,9 +21,9 @@ public class RetailerAccount {
 	private String customer_type;
 	private String street;
 	private String number;
-	private String neighborhood;
-	private String district;
-	private String province;
+	private String Neighborhood;
+	private String District;
+	private String Province;
 	private String country;
 	private String postal_code;
 	private String phone_number;
@@ -53,7 +53,7 @@ public class RetailerAccount {
 
 
 	public String getProperty_name() {
-		return property_name;
+		return property_name.trim();
 	}
 
 
@@ -72,13 +72,13 @@ public class RetailerAccount {
 	}
 
 
-	public int getStore_Status() {
-		return store_Status;
+	public String getStore_Status() {
+		return Store_Status;
 	}
 
 
-	public void setStore_Status(int store_Status) {
-		store_Status = store_Status;
+	public void setStore_Status(String store_Status) {
+		Store_Status = store_Status;
 	}
 
 
@@ -104,7 +104,7 @@ public class RetailerAccount {
 
 
 	public String getCuit_dni_id() {
-		return cuit_dni_id;
+		return cuit_dni_id.trim();
 	}
 
 
@@ -144,7 +144,7 @@ public class RetailerAccount {
 
 
 	public String getStreet() {
-		return street;
+		return street.trim();
 	}
 
 
@@ -154,7 +154,7 @@ public class RetailerAccount {
 
 
 	public String getNumber() {
-		return number;
+		return number.trim();
 	}
 
 
@@ -164,37 +164,37 @@ public class RetailerAccount {
 
 
 	public String getNeighborhood() {
-		return neighborhood;
+		return Neighborhood.trim();
 	}
 
 
 	public void setNeighborhood(String neighborhood) {
-		neighborhood = neighborhood;
+		Neighborhood = neighborhood;
 	}
 
 
 	public String getDistrict() {
-		return district;
+		return District.trim();
 	}
 
 
 	public void setDistrict(String district) {
-		district = district;
+		District = district;
 	}
 
 
 	public String getProvince() {
-		return province;
+		return Province.trim();
 	}
 
 
 	public void setProvince(String province) {
-		province = province;
+		Province = province;
 	}
 
 
 	public String getCountry() {
-		return country;
+		return country.trim();
 	}
 
 
@@ -204,7 +204,7 @@ public class RetailerAccount {
 
 
 	public String getPostal_code() {
-		return postal_code;
+		return postal_code.trim();
 	}
 
 
@@ -224,7 +224,7 @@ public class RetailerAccount {
 
 
 	public String getMobile_number() {
-		return mobile_number;
+		return mobile_number.trim();
 	}
 
 
@@ -234,7 +234,7 @@ public class RetailerAccount {
 
 
 	public String getEmail() {
-		return email;
+		return email.trim();
 	}
 
 
@@ -244,7 +244,7 @@ public class RetailerAccount {
 
 
 	public String getFirstname() {
-		return firstname;
+		return firstname.trim();
 	}
 
 
@@ -254,7 +254,7 @@ public class RetailerAccount {
 
 
 	public String getSurname() {
-		return surname;
+		return surname.trim();
 	}
 
 

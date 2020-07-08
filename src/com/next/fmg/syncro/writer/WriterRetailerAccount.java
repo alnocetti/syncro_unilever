@@ -1,9 +1,11 @@
 package com.next.fmg.syncro.writer;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -13,7 +15,6 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.google.gson.stream.JsonReader;
 import com.linuxense.javadbf.DBFReader;
 import com.linuxense.javadbf.DBFRow;
 import com.linuxense.javadbf.DBFWriter;
@@ -27,7 +28,7 @@ public class WriterRetailerAccount {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void downloadRetaliers() throws FileNotFoundException {
+	public void downloadRetaliers() throws IOException {
 		
 		
 		//Read json into array
@@ -42,9 +43,23 @@ public class WriterRetailerAccount {
 
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
-		JsonReader reader = new JsonReader(new FileReader(file));
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 		
-		retailers = gson.fromJson(reader, token);
+		String line = null;
+		
+		StringBuilder json = new StringBuilder();
+		
+		while((line = br.readLine()) != null){
+
+			json = json.append(line);
+
+	    }
+		
+		br.close();
+		
+		//JsonReader reader = new JsonReader(new FileReader(file));
+		
+		retailers = gson.fromJson(json.toString(), token);
 		
 		if(retailers == null) {
 			System.out.println("Nothing to download");
@@ -114,24 +129,24 @@ public class WriterRetailerAccount {
 		DBFRow row;
 		
 		while ((row = reader.nextRow()) != null) {
-		
-			if(row.getString("CLICODDIS").equals(retailer.getDistributor_code()) &&
-			   row.getString("CLIRAZSOC").equals(retailer.getProperty_name()) &&
+			if(
+//			   row.getString("CLICODDIS").equals(retailer.getDistributor_code()) &&
+//			   row.getString("CLIRAZSOC").equals(retailer.getProperty_name()) &&
 			   row.getString("CLICUIT").equals(retailer.getCuit_dni_id()) &&
 			   row.getInt("CLITABCUIT")==Integer.valueOf(retailer.getDocument_type_id()) &&
-			   row.getString("CLIIIBB").equals(retailer.getIngresos_brutos()) &&
-			   row.getString("CLIDOMICI").equals(retailer.getStreet()) &&
+//			   row.getString("CLIIIBB").equals(retailer.getIngresos_brutos()) &&
+//			   row.getString("CLIDOMICI").equals(retailer.getStreet()) &&
 			   row.getString("CLIALTURA").equals(retailer.getNumber()) &&		   
-			   row.getString("CLILOCALI").equals(retailer.getNeighborhood()) &&
-			   row.getString("CLIPARTIDO").equals(retailer.getDistrict()) &&
-			   row.getString("CLIPROVIN").equals(retailer.getProvince()) &&
-			   row.getString("CLIPAIS").equals(retailer.getCountry()) &&
+//			   row.getString("CLILOCALI").equals(retailer.getNeighborhood()) &&
+//			   row.getString("CLIPARTIDO").equals(retailer.getDistrict()) &&
+//			   row.getString("CLIPROVIN").equals(retailer.getProvince()) &&
+//			   row.getString("CLIPAIS").equals(retailer.getCountry()) &&
 			   row.getString("CLIPOSTAL").equals(retailer.getPostal_code()) &&
 			   row.getString("CLITELEF").equals(retailer.getPhone_number()) &&
 			   row.getString("CLITELEX").equals(retailer.getMobile_number()) &&
-			   row.getString("CLIMAIL").equals(retailer.getEmail()) &&
-			   row.getString("CLINOMBRE").equals(retailer.getFirstname()) &&
-			   row.getString("CLIAPELLI").equals(retailer.getSurname())
+			   row.getString("CLIMAIL").equals(retailer.getEmail())
+//			   row.getString("CLINOMBRE").equals(retailer.getFirstname()) &&
+//			   row.getString("CLIAPELLI").equals(retailer.getSurname())
 					) {
 				
 				return true;

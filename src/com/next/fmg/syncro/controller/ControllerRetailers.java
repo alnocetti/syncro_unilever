@@ -40,6 +40,11 @@ public class ControllerRetailers {
 			System.out.println("<-- postRetailers");
 			
 			List<RetailerAccount> retailers = this.reader.readRetailers();
+			
+			if (retailers.isEmpty()) {
+				System.out.println("Nada para enviar");
+				return null;
+			}
 					
 			List<WebResponse> respuestas = new ArrayList<WebResponse>();
 					
@@ -55,7 +60,7 @@ public class ControllerRetailers {
 			return respuestas;
 		}
 		
-		public void downloadRetailers() throws FileNotFoundException {
+		public void downloadRetailers() throws IOException {
 			
 			System.out.println("<-- downloadRetailers");
 			

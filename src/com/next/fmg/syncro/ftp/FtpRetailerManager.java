@@ -1,10 +1,8 @@
 package com.next.fmg.syncro.ftp;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -24,22 +22,27 @@ public class FtpRetailerManager {
 
 	public void downloadRetailers() {
 		
+		
 	       try {
 	            client.connect("ftp.disanmi.net");
 	            
 	            client.login("u153383246.magento", "biiBO5Ms");
+	            
+	            client.setControlEncoding("UTF-8");
 	            
 	            SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 	    			            
 	            String remoteFile = format.format(new Date()) + "_Retailer.json";
 	            
 	            File downloadFile = new File(Application.DIR_LECTURA_JSON + format.format(new Date()) + "_Retailer.json");
+	             
 	            
 	 	        FileOutputStream fos = new FileOutputStream(downloadFile);
-	 	        
+	 	           
 	 	        client.retrieveFile("/" + remoteFile, fos);
-	            
-	 	        fos.close();
+	 	        
+		        fos.close();
+	 			
 	 	        client.disconnect();
 	            
 	        } catch (IOException e) {
@@ -58,5 +61,6 @@ public class FtpRetailerManager {
 	       
 	  
 	}
+	
 
 }

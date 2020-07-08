@@ -36,7 +36,12 @@ public class ControllerCatalog {
 			System.out.println("<-- postCatalog()");
 			
 			Catalog catalog = this.reader.readCatalog();
-					
+			
+			if (catalog.getProducts().isEmpty()) {
+				System.out.println("Nada para enviar");
+				return null;
+			}
+			
 			List<WebResponse> respuestas = new ArrayList<WebResponse>();
 			
 			WebResponse webResponse = this.restClient.postCatalog(catalog);

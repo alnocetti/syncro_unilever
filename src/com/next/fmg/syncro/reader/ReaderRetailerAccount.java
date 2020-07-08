@@ -51,7 +51,7 @@ public class ReaderRetailerAccount {
 					
 					retailer.setStore_id_ERP(row.getString("CLIENVNEXT"));
 					
-					retailer.setStore_Status(row.getInt("CLIENVSTAT"));
+					retailer.setStore_Status(Integer.toString(row.getInt("CLIENVSTAT")));
 					
 					retailer.setRejection_reason(row.getString("CLIENVMOTI"));
 					
@@ -61,7 +61,7 @@ public class ReaderRetailerAccount {
 					
 					retailer.setIngresos_brutos(row.getString("CLIIIBB"));
 					
-					retailer.setCustomer_type(row.getString("CLITIPO"));
+					retailer.setCustomer_type(row.getString("CLITABTIPO"));
 					
 					retailer.setStreet(row.getString("CLIDOMICI"));
 					
@@ -152,7 +152,7 @@ public class ReaderRetailerAccount {
 
 		while ((row = readerNroRegistro.nextRow()) != null) {
 					
-			if(row.getString("CLIENVNEXT").contentEquals(ra.getStore_id_ERP()) && row.getString("CLICUIT").equals(ra.getCuit_dni_id())) {
+			if(row.getString("CLIENVNEXT").equals(ra.getStore_id_ERP()) && row.getString("CLICUIT").equals(ra.getCuit_dni_id())) {
 				
 				return registro;
 				

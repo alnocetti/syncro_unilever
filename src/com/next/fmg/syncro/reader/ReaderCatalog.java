@@ -123,7 +123,7 @@ public class ReaderCatalog {
 
 		while ((row = readerNroRegistro.nextRow()) != null) {
 					
-			if(row.getString("itmean").contentEquals(product.getEAN()) && row.getInt("itmgrabo")==2) {
+			if(row.getString("itmean").equals(product.getEAN()) && row.getInt("itmgrabo")==2) {
 				
 				return registro;
 				
