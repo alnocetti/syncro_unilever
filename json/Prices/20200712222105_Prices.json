@@ -2,12 +2,12 @@
   "distributor_code": "10310151",
   "products": [
     {
-      "EAN": "",
+      "EAN": "7798031155426",
       "prices": [
         {
           "store_id_ERP": "",
-          "price": "35.97",
-          "special_price": "35.97",
+          "price": "32.6",
+          "special_price": "32.6",
           "special_price_start_date": "",
           "special_price_end_date": "",
           "discount_value": "0.0",
@@ -38,7 +38,43 @@
       ]
     },
     {
+      "EAN": "7798031155440",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "29.75",
+          "special_price": "29.75",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
       "EAN": "7798031154467",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "32.6",
+          "special_price": "32.6",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
+      "EAN": "7798031155168",
       "prices": [
         {
           "store_id_ERP": "",
@@ -92,7 +128,43 @@
       ]
     },
     {
+      "EAN": "7798031154443",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "29.75",
+          "special_price": "29.75",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
       "EAN": "7798031154115",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "38.1",
+          "special_price": "38.1",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
+      "EAN": "7798031154122",
       "prices": [
         {
           "store_id_ERP": "",
@@ -128,7 +200,43 @@
       ]
     },
     {
+      "EAN": "7798031154221",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "38.1",
+          "special_price": "38.1",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
       "EAN": "7798031154153",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "38.1",
+          "special_price": "38.1",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
+      "EAN": "7798031154160",
       "prices": [
         {
           "store_id_ERP": "",
@@ -164,6 +272,24 @@
       ]
     },
     {
+      "EAN": "7798031154177",
+      "prices": [
+        {
+          "store_id_ERP": "",
+          "price": "38.1",
+          "special_price": "38.1",
+          "special_price_start_date": "",
+          "special_price_end_date": "",
+          "discount_value": "0.0",
+          "discount_type": "0",
+          "quantity_min_product": "0",
+          "quantity_max_product": "0",
+          "valid_week_day": "1,2,3,4,5,6,7,",
+          "retailer_group": "0"
+        }
+      ]
+    },
+    {
       "EAN": "7798031154184",
       "prices": [
         {
@@ -182,7 +308,7 @@
       ]
     },
     {
-      "EAN": "",
+      "EAN": "7798031154191",
       "prices": [
         {
           "store_id_ERP": "",
@@ -196,24 +322,16 @@
           "quantity_max_product": "0",
           "valid_week_day": "1,2,3,4,5,6,7,",
           "retailer_group": "0"
-        },
+        }
+      ]
+    },
+    {
+      "EAN": "7798031154146",
+      "prices": [
         {
           "store_id_ERP": "",
-          "price": "38.1",
-          "special_price": "38.1",
-          "special_price_start_date": "",
-          "special_price_end_date": "",
-          "discount_value": "0.0",
-          "discount_type": "0",
-          "quantity_min_product": "0",
-          "quantity_max_product": "0",
-          "valid_week_day": "1,2,3,4,5,6,7,",
-          "retailer_group": "0"
-        },
-        {
-          "store_id_ERP": "",
-          "price": "38.1",
-          "special_price": "38.1",
+          "price": "52.95",
+          "special_price": "52.95",
           "special_price_start_date": "",
           "special_price_end_date": "",
           "discount_value": "0.0",
@@ -244,12 +362,12 @@
       ]
     },
     {
-      "EAN": "",
+      "EAN": "7798031154245",
       "prices": [
         {
           "store_id_ERP": "",
-          "price": "53.0",
-          "special_price": "53.0",
+          "price": "52.95",
+          "special_price": "52.95",
           "special_price_start_date": "",
           "special_price_end_date": "",
           "discount_value": "0.0",
@@ -258,7 +376,12 @@
           "quantity_max_product": "0",
           "valid_week_day": "1,2,3,4,5,6,7,",
           "retailer_group": "0"
-        },
+        }
+      ]
+    },
+    {
+      "EAN": "7798031155303",
+      "prices": [
         {
           "store_id_ERP": "",
           "price": "53.0",

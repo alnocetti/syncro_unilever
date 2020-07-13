@@ -34,7 +34,7 @@ public class FtpRetailerManager {
 	    			            
 	            String remoteFile = format.format(new Date()) + "_Retailer.json";
 	            
-	            File downloadFile = new File(Application.DIR_LECTURA_JSON + format.format(new Date()) + "_Retailer.json");
+	            File downloadFile = new File(Application.DIR_DOWNLOAD_FTP + "Retailers/"+ format.format(new Date()) + "_Retailer.json");
 	             
 	            
 	 	        FileOutputStream fos = new FileOutputStream(downloadFile);

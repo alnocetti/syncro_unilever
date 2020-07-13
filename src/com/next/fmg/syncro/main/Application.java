@@ -22,6 +22,7 @@ public class Application {
 	public static String DIR_LECTURA_JSON;
 	public static String DIR_JSON;
 	public static String DISTRIBUTOR_CODE;
+	public static String DIR_DOWNLOAD_FTP;
 	
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		// TODO Auto-generated method stub
@@ -35,6 +36,7 @@ public class Application {
 		CLIENT_SECRET = doc.getElementsByTagName("CLIENT_SECRET").item(0).getTextContent();
 		DIR_LECTURA_DBF = doc.getElementsByTagName("DIR_LECTURA_DBF").item(0).getTextContent();
 		DIR_LECTURA_JSON = doc.getElementsByTagName("DIR_LECTURA_JSON").item(0).getTextContent();
+		DIR_DOWNLOAD_FTP = doc.getElementsByTagName("DIR_DOWNLOAD_FTP").item(0).getTextContent();
 		DIR_JSON = doc.getElementsByTagName("DIR_JSON").item(0).getTextContent();
 		DISTRIBUTOR_CODE = doc.getElementsByTagName("DISTRIBUTOR_CODE").item(0).getTextContent();
 		
@@ -42,17 +44,19 @@ public class Application {
 		//ControllerRetailers.getInstance().postRetailers();
 		
 		//Recepción retailers
-		ControllerRetailers.getInstance().downloadRetailersFTP();
-		ControllerRetailers.getInstance().downloadRetailers();
+		//ControllerRetailers.getInstance().downloadRetailersFTP();
+		//ControllerRetailers.getInstance().downloadRetailers();
 		
 		//Envio catalogo
 		//ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
-		//ControllerInventory.getInstance().postInventory();
+		ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
 		//ControllerPrices.getInstance().postPrices();
+		
+		System.out.println("Fin.");
 		
 	}
 

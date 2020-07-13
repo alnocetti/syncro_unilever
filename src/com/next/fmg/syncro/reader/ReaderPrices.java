@@ -44,46 +44,74 @@ public class ReaderPrices {
 						
 			while ((row = reader.nextRow()) != null) {
 
-				PriceProduct priceProduct = new PriceProduct();
+				if(row.getInt("pregrabo") == 2) {
+					
+					PriceProduct priceProduct = new PriceProduct();
+					
+					priceProduct.setEAN(row.getString("preean"));
+					
+					String auxEAN = row.getString("preean");
+					
+					if (!priceList.existeProducto(auxEAN))
+						priceList.addPriceProduct(priceProduct);
 				
-				priceProduct.setEAN(row.getString("preean"));
-				
-				String auxEAN = row.getString("preean");
-				
-				while(row.getInt("pregrabo") == 2 && auxEAN.equals(row.getString("preean")) && row != null) {
-
 					Price price = new Price();
-										
-					price.setStore_id_ERP(row.getString("precliente"));
+											
+					if(row.getString("precliente").isEmpty()) 
+						price.setStore_id_ERP(null);
+					else 
+						price.setStore_id_ERP(row.getString("precliente"));
 					
 					price.setPrice(Float.toString(row.getFloat("preprecio")));
 					
-					price.setSpecial_price(Float.toString(row.getFloat("prepreesp")));
+					if(row.getFloat("prepreesp") == 0)
+						price.setSpecial_price(null);
+					else
+						price.setSpecial_price(Float.toString(row.getFloat("prepreesp")));
 					
-					price.setSpecial_price_start_date(row.getString("predfecha"));
+					if(row.getString("predfecha").isEmpty())
+						price.setSpecial_price_start_date(null);
+					else
+						price.setSpecial_price_start_date(row.getString("predfecha"));
 					
-					price.setSpecial_price_end_date(row.getString("prehfecha"));
+					if(row.getString("prehfecha").isEmpty())
+						price.setSpecial_price_end_date(null);
+					else
+						price.setSpecial_price_end_date(row.getString("prehfecha"));
 					
-					price.setDiscount_value(Float.toString(row.getFloat("predescue")));
+					if(row.getFloat("predescue") == 0)
+						price.setDiscount_value(null);
+					else
+						price.setDiscount_value(Float.toString(row.getFloat("predescue")));
 					
-					price.setDiscount_type(Integer.toString(row.getInt("predestip")));
+					if(row.getInt("predestip") == 0)
+						price.setDiscount_type(null);
+					else
+						price.setDiscount_type(Integer.toString(row.getInt("predestip")));
 					
-					price.setQuantity_min_product(Integer.toString(row.getInt("precmin")));
+					if(row.getInt("precmin") == 0)
+							price.setQuantity_min_product(null);
+					else
+						price.setQuantity_min_product(Integer.toString(row.getInt("precmin")));
 					
-					price.setQuantity_max_product(Integer.toString(row.getInt("precmax")));
+					if(row.getInt("precmax") == 0)
+						price.setQuantity_max_product(null);
+					else
+						price.setQuantity_max_product(Integer.toString(row.getInt("precmax")));
 					
-					price.setValid_week_day(row.getString("predias"));
+					if(row.getString("predias").isEmpty())
+						price.setValid_week_day(null);
+					else
+						price.setValid_week_day(row.getString("predias"));
 					
-					price.setRetailer_group(Integer.toString(row.getInt("precanal")));
+					if(row.getString("precanal").isEmpty()) 
+						price.setRetailer_group(null);
+					else 
+						price.setRetailer_group(row.getString("precanal"));
 					
-					priceProduct.addPrice(price);
-					
-					row = reader.nextRow();
-					
-				}
+					priceList.addPriceToProduct(priceProduct, price);
 				
-				if (!priceProduct.getPrices().isEmpty())
-					priceList.addPriceProduct(priceProduct);
+				}
 				
 			}
 			
@@ -92,6 +120,8 @@ public class ReaderPrices {
 		} finally {
 			DBFUtils.close(reader);
 		}
+		
+		priceList.limpiarVacios();
 		
 		return priceList;
 		
@@ -106,7 +136,7 @@ public class ReaderPrices {
 			
 			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbprecio.dbf"));
 			
-			writer.go(getNroRegistro(price,ean));	
+			writer.go(getNroRegistro(ean));	
 							
 			writer.setValue("prerespues", response);
 			
@@ -124,7 +154,7 @@ public class ReaderPrices {
 	}
 	
 	
-	public int getNroRegistro(Price price, String ean) {
+	public int getNroRegistro(String ean) {
 		
 		DBFReader readerNroRegistro = null;
 		
@@ -143,7 +173,7 @@ public class ReaderPrices {
 
 		while ((row = readerNroRegistro.nextRow()) != null) {
 					
-			if(row.getString("preprecio").equals(price.getPrice()) && row.getInt("pregrabo")==2 && row.getString("preean").equals(ean)) {
+			if(row.getInt("pregrabo")==2 && row.getString("preean").equals(ean)) {
 				
 				return registro;
 				

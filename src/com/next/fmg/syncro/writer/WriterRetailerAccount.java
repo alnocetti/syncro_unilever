@@ -38,7 +38,7 @@ public class WriterRetailerAccount {
 		SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 		
-		String file = Application.DIR_LECTURA_JSON + format.format(new Date()) + "_Retailer.json";
+		String file = Application.DIR_DOWNLOAD_FTP + "Retailers/" + format.format(new Date()) + "_Retailer.json";
 		
 		List<RetailerAccount>retailers = new ArrayList<RetailerAccount>();
 		
@@ -104,8 +104,8 @@ public class WriterRetailerAccount {
 				rowData[18] = retailer.getFirstname();
 				rowData[19] = retailer.getSurname();
 				rowData[20] = retailer.getStore_id_ERP();
-				rowData[21] = Integer.valueOf(retailer.getStore_Status());
-				rowData[22] = retailer.getRejection_reason();
+				rowData[21] = 0;
+				rowData[22] = "";
 				rowData[23] = retailer.getCustomer_credit_available();
 				rowData[24] = retailer.getCustomer_total_credit();	
 				rowData[25] = retailer.getCustomer_pending_payment();

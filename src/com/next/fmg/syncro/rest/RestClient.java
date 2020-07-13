@@ -363,8 +363,16 @@ public class RestClient {
 			//System.out.println("<-- postCatalog()");
 
 		try {
+			
+			GsonBuilder builder = new GsonBuilder();
+		   
+			builder.serializeNulls();
 		
-			Gson gson = new GsonBuilder().setPrettyPrinting().create();
+			Gson gson = builder.setPrettyPrinting().create();
+			
+	//		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+			
+	//		gson.serializeNulls();
 					
 			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/price");
 			
@@ -408,17 +416,17 @@ public class RestClient {
 			//Leo respuesta
 			br = new BufferedReader(_is);
 			
-			StringBuilder builder = new StringBuilder();
+			StringBuilder builder1 = new StringBuilder();
 			
 			String output;
 			
 			while ((output = br.readLine()) != null) {
 	
-				builder.append(output);
+				builder1.append(output);
 			
 			}
 			
-			String aux = builder.toString();
+			String aux = builder1.toString();
 			
 			webResponse.setResponseCode(conn.getResponseCode());
 			
@@ -428,7 +436,7 @@ public class RestClient {
 				
 				TypeToken<PriceList> token = new TypeToken<PriceList>() {};
 				
-				response =  gson.fromJson(builder.toString(),  token.getType());
+				response =  gson.fromJson(builder1.toString(),  token.getType());
 				
 				/*******************************************************************/
 				
