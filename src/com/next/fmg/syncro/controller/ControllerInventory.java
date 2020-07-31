@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.next.fmg.syncro.model.Inventory;
+import com.next.fmg.syncro.model.Product;
 import com.next.fmg.syncro.model.StockProduct;
 import com.next.fmg.syncro.reader.ReaderInventory;
 import com.next.fmg.syncro.rest.RestClient;
@@ -31,24 +32,38 @@ public class ControllerInventory {
 		}
 		
 		public List<WebResponse> postInventory() throws IOException{
+			
+			int particion = 50;
+
 			System.out.println("<-- postInventory()");
 			
 			Inventory inventory = this.reader.readInventory();
-			
 			if (inventory.getSourceItems().isEmpty()) {
-				System.out.println("Nada para enviar");
+				System.out.println("Nothing to send");
 				return null;
 			}
 			
+			List<StockProduct> products = inventory.getSourceItems();
+			List<StockProduct> subProducts = new ArrayList<StockProduct>();
 			List<WebResponse> respuestas = new ArrayList<WebResponse>();
+			WebResponse webResponse = new WebResponse();
 			
-			WebResponse webResponse = this.restClient.postInventory(inventory);
+			for (int i = 1; i <= Math.floor((products.size() / particion)); i++) {
+				System.out.println("Enviando: " + i + " de "+ Math.floor((products.size() / particion)) + " particiones");
 
-			for (StockProduct stockProduct : inventory.getSourceItems()) {
+				subProducts = products.subList((i-1) * particion, (i * particion) -1);
+				inventory.setSourceItems(subProducts);
 				
-				this.reader.saveResponse(stockProduct, webResponse.getResponseMessage());
-				
+				webResponse = this.restClient.postInventory(inventory);
+
+				for (StockProduct stockProduct : inventory.getSourceItems()) {
+					System.out.println("Grabando respuesta producto: " + stockProduct.getEAN());
+					this.reader.saveResponse(stockProduct, webResponse.getResponseMessage());
+					
+				}
 			}
+			
+
 			
 			return respuestas;
 		}

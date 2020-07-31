@@ -13,6 +13,7 @@ import com.next.fmg.syncro.controller.ControllerCatalog;
 import com.next.fmg.syncro.controller.ControllerInventory;
 import com.next.fmg.syncro.controller.ControllerPrices;
 import com.next.fmg.syncro.controller.ControllerRetailers;
+import com.next.fmg.syncro.controller.ControllerSalesOrder;
 
 public class Application {
 
@@ -51,12 +52,25 @@ public class Application {
 		//ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
-		ControllerInventory.getInstance().postInventory();
+		//ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
-		//ControllerPrices.getInstance().postPrices();
+		ControllerPrices.getInstance().postPrices();
 		
-		System.out.println("Fin.");
+		//Envio sales orders
+		//ControllerSalesOrder.getInstance().postSalesOrder();
+		
+		//Recepción sales order
+		//ControllerSalesOrder.getInstance().downloadSalesOrderFTP();
+		//ControllerSalesOrder.getInstance().downloadSalesOrder();
+		//ControllerSalesOrder.getInstance().updateSalesOrder();
+		
+		//Envio sales order
+		//ControllerSalesOrder.getInstance().postSalesOrder();
+	
+		
+		
+		System.out.println("End.");
 		
 	}
 

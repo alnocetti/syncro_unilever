@@ -33,25 +33,37 @@ public class ControllerCatalog {
 		}
 		
 		public List<WebResponse> postCatalog() throws IOException{
+			
+			int particion = 50;
+			
 			System.out.println("<-- postCatalog()");
 			
 			Catalog catalog = this.reader.readCatalog();
-			
 			if (catalog.getProducts().isEmpty()) {
-				System.out.println("Nada para enviar");
+				System.out.println("Nothing to send");
 				return null;
 			}
 			
+			List<Product> products = catalog.getProducts();
+			List<Product> subProducts = new ArrayList<Product>();
 			List<WebResponse> respuestas = new ArrayList<WebResponse>();
+			WebResponse webResponse = new WebResponse();
 			
-			WebResponse webResponse = this.restClient.postCatalog(catalog);
+			for (int i = 1; i <= Math.floor((products.size() / particion)); i++) {
+				System.out.println("Enviando: " + i + " de "+ Math.floor((products.size() / particion)) + " particiones");
 
-			for (Product product : catalog.getProducts()) {
+				subProducts = products.subList((i-1) * particion, (i * particion) -1);
+				catalog.setProducts(subProducts);
 				
-				this.reader.saveResponse(product, webResponse.getResponseMessage());
+				webResponse = this.restClient.postCatalog(catalog);
 				
-			}
-			
+				for (Product product : catalog.getProducts()) {
+					System.out.println("Grabando respuesta producto: " + product.getName_prod());
+					this.reader.saveResponse(product, webResponse.getResponseMessage());
+					
+				}
+	        }
+						
 			return respuestas;
 		}
 		

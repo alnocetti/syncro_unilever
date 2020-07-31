@@ -1,0 +1,56 @@
+{
+  "distributor_code": "10310151",
+  "orders": [
+    {
+      "order_source": "compreahora",
+      "order_id": "000028834",
+      "store_id_ERP": "113448",
+      "erp_order_id": "",
+      "updated_at": "2020-07-17 14:35:55",
+      "total_qty_ordered": "1.0",
+      "discount_amount": "0.0000",
+      "grand_total": "119.7400",
+      "subtotal": "119.7400",
+      "total_item_count": "1",
+      "total_due": "119.7400",
+      "status": "101",
+      "items": [
+        {
+          "name": "Shampoo Sedal Crema Balance 340ml",
+          "industry": "UNILEVER",
+          "original_price": "0.0000",
+          "price": "119.7400",
+          "price_incl_tax": "119.7400",
+          "qty_ordered": "1.0000",
+          "discount_amount": "0.0000",
+          "row_total": "119.7400",
+          "row_total_inclusive_tax": "119.7400",
+          "EAN": "7791293030807",
+          "row_weight": "0.0000"
+        }
+      ],
+      "items_changed": {
+        "7791293030807": "Falta stock"
+      },
+      "payment": {
+        "amount_ordered": "119.7400",
+        "method": "COD"
+      },
+      "shipping": {
+        "address": {
+          "email": "alnocetti+test1@gmail.com",
+          "firstname": "Alan",
+          "lastname": "Nocetti",
+          "postcode": "C1774",
+          "street": "Concejal Tribulato  asd",
+          "street_number": "asd",
+          "district": "San Miguel",
+          "province": "Buenos Aires",
+          "country": "AR",
+          "neighborhood": "San Miguel"
+        }
+      },
+      "shipment_type": ""
+    }
+  ]
+}

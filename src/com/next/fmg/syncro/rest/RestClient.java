@@ -18,8 +18,11 @@ import com.google.gson.reflect.TypeToken;
 import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.Catalog;
 import com.next.fmg.syncro.model.Inventory;
+import com.next.fmg.syncro.model.Order;
+import com.next.fmg.syncro.model.OrderUpdate;
 import com.next.fmg.syncro.model.PriceList;
 import com.next.fmg.syncro.model.RetailerAccount;
+import com.next.fmg.syncro.model.SalesOrderUpdate;
 
 public class RestClient {
 	
@@ -375,7 +378,6 @@ public class RestClient {
 	//		gson.serializeNulls();
 					
 			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/price");
-			
 			conn = (HttpURLConnection) url.openConnection();
 			
 			conn.setRequestMethod("POST");
@@ -440,7 +442,7 @@ public class RestClient {
 				
 				/*******************************************************************/
 				
-				webResponse.setResponseMessage(conn.getResponseMessage() + ", Stock enviado correctamente");
+				webResponse.setResponseMessage(conn.getResponseMessage() + ", Precio enviado correctamente");
 				
 			} else {
 			     /* error from server */
@@ -463,5 +465,109 @@ public class RestClient {
 
 	}
 
+	public WebResponse postSalesOrder(OrderUpdate order) throws IOException {
+		
+		SalesOrderUpdate salesOrderUpdate = new SalesOrderUpdate();
+		
+		salesOrderUpdate.setDistributor_code(Application.DISTRIBUTOR_CODE);
+		
+		salesOrderUpdate.addOrder(order);
+		
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
+
+		WebResponse webResponse = new WebResponse();
+		
+		intentos = 0;
+		
+		while(intentos <= 1) {
+		
+			System.out.println("<-- postSalesOrder(" + order.getOrder_id() + ")");
+
+		try {
+		
+			Gson gson = new GsonBuilder().setPrettyPrinting().create();
+					
+			
+			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/order/status/update");//your url i.e fetch data from .
+
+			conn = (HttpURLConnection) url.openConnection();
+			
+			conn.setRequestMethod("POST");
+			
+			// seteo api-key 
+			conn.addRequestProperty("client_id", Application.CLIENT_ID);
+			conn.addRequestProperty("client_secret", Application.CLIENT_SECRET);
+			
+			conn.setReadTimeout(30000);
+			conn.setConnectTimeout(30000);
+			
+			conn.setRequestProperty("Content-Type", "application/json");
+			
+			conn.setDoOutput(true);
+			
+			Writer writer =  new FileWriter(Application.DIR_JSON + "SalesOrder/" + format.format(new Date()) + "_SalesOrder_" + order.getOrder_id() + ".json");	
+			gson.toJson(salesOrderUpdate, writer);
+			writer.flush();
+			writer.close();
+			
+			String auxi = gson.toJson(salesOrderUpdate);
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream(), "UTF-8"));
+			bw.write(auxi);
+			bw.flush();
+			bw.close();
+
+					
+			InputStreamReader _is;
+			BufferedReader br;
+			
+			if (conn.getResponseCode() < HttpURLConnection.HTTP_BAD_REQUEST) {
+			    _is = new InputStreamReader(conn.getInputStream());
+			} else {
+			     /* error from server */
+			    _is = new InputStreamReader(conn.getErrorStream());
+			}
+			
+			br = new BufferedReader(_is);
+			
+			StringBuilder builder = new StringBuilder();
+			
+			String output;
+			
+			while ((output = br.readLine()) != null) {
+	
+				builder.append(output);
+			
+			}
+			
+			String aux = builder.toString();
+			
+			webResponse.setResponseCode(conn.getResponseCode());
+			
+			if (conn.getResponseCode() < conn.HTTP_BAD_REQUEST) {
+				
+				webResponse.setResponseMessage(conn.getResponseMessage() + ", Order enviada correctamente");
+				
+			} else {
+			     /* error from server */
+				webResponse.setResponseMessage(aux);
+				
+			}
+		
+			conn.disconnect();
+
+		} catch (Exception e) {
+			
+			System.out.println("Exception in NetClientGet:- " + e);
+			intentos++;
+			continue;
+		}
+		
+		return webResponse;
+		}
+		return webResponse;
+
+	}
+	
+	
 	
 }

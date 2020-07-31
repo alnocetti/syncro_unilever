@@ -42,7 +42,7 @@ public class ControllerRetailers {
 			List<RetailerAccount> retailers = this.reader.readRetailers();
 			
 			if (retailers.isEmpty()) {
-				System.out.println("Nada para enviar");
+				System.out.println("Nothing to send");
 				return null;
 			}
 					
