@@ -1,0 +1,1524 @@
+{
+  "distributor_code": "10310151",
+  "products": [
+    {
+      "EAN": "7794000999336",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": "535.55",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000999367",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": "535.55",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000999398",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "48.19",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "48.19",
+          "special_price": "48.19",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000999350",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": "535.55",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000999381",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "535.55",
+          "special_price": "535.55",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000001992",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "75.2",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "75.2",
+          "special_price": "75.2",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598461",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598539",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002005",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "88.5",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "88.5",
+          "special_price": "88.5",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002043",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "38.8",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "38.8",
+          "special_price": "38.8",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598553",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598492",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598508",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002777",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": "108.46",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002784",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": "108.46",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002791",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "108.46",
+          "special_price": "108.46",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598485",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598478",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.68",
+          "special_price": "85.68",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7801810712663",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "97.59",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "97.59",
+          "special_price": "97.59",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7801810119370",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "82.81",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "82.81",
+          "special_price": "82.81",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002906",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "114.09",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "114.09",
+          "special_price": "114.09",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002869",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "114.09",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "114.09",
+          "special_price": "114.09",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598805",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "55.87",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "55.87",
+          "special_price": "55.87",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000001787",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "68.39",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "68.39",
+          "special_price": "68.39",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000001800",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "68.39",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "68.39",
+          "special_price": "68.39",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002494",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": "83.24",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002500",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": "83.24",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002517",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "83.24",
+          "special_price": "83.24",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000599185",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "99.11",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "99.11",
+          "special_price": "99.11",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000002227",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "456.73",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "456.73",
+          "special_price": "456.73",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000599826",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "46.0",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "46.0",
+          "special_price": "46.0",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598874",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "40.84",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "40.84",
+          "special_price": "40.05",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598843",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "42.05",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "42.05",
+          "special_price": "42.05",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000597280",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "569.79",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "569.79",
+          "special_price": "569.79",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7794000598751",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "84.83",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "84.83",
+          "special_price": "84.83",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150058132",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": "767.02",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150058156",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": "767.02",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150058125",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": "767.02",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150058149",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": "767.02",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150058118",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "767.02",
+          "special_price": "767.02",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033358",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": "97.2",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033365",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": "97.2",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033372",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": "97.2",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033389",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "97.2",
+          "special_price": "97.2",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033006",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "163.12",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "163.12",
+          "special_price": "163.12",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293033044",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "163.12",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "163.12",
+          "special_price": "163.12",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293038155",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "130.52",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "130.52",
+          "special_price": "130.52",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7891150064980",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "50.9",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "50.9",
+          "special_price": "50.9",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    },
+    {
+      "EAN": "7791293037776",
+      "prices": [
+        {
+          "store_id_ERP": null,
+          "price": "85.06",
+          "special_price": null,
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": null
+        },
+        {
+          "store_id_ERP": null,
+          "price": "85.06",
+          "special_price": "85.06",
+          "special_price_start_date": null,
+          "special_price_end_date": null,
+          "discount_value": null,
+          "discount_type": null,
+          "quantity_min_product": null,
+          "quantity_max_product": null,
+          "valid_week_day": null,
+          "retailer_group": "1"
+        }
+      ]
+    }
+  ]
+}

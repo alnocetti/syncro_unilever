@@ -49,13 +49,13 @@ public class Application {
 		//ControllerRetailers.getInstance().downloadRetailers();
 		
 		//Envio catalogo
-		//ControllerCatalog.getInstance().postCatalog();
+		ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
 		//ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
-		ControllerPrices.getInstance().postPrices();
+		//ControllerPrices.getInstance().postPrices();
 		
 		//Envio sales orders
 		//ControllerSalesOrder.getInstance().postSalesOrder();

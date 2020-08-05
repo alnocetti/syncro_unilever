@@ -49,10 +49,14 @@ public class ControllerCatalog {
 			List<WebResponse> respuestas = new ArrayList<WebResponse>();
 			WebResponse webResponse = new WebResponse();
 			
-			for (int i = 1; i <= Math.floor((products.size() / particion)); i++) {
-				System.out.println("Enviando: " + i + " de "+ Math.floor((products.size() / particion)) + " particiones");
+			for (int i = 1; i <= (Math.floor((products.size() / particion))+1); i++) {
+				System.out.println("Enviando: " + i + " de "+ (Math.floor((products.size() / particion))+1) + " particiones");
 
-				subProducts = products.subList((i-1) * particion, (i * particion) -1);
+				if(i == (Math.floor((products.size() / particion))+1))
+					subProducts = products.subList((i-1) * particion, products.size());
+				else
+					subProducts = products.subList((i-1) * particion, (i * particion) -1);
+				
 				catalog.setProducts(subProducts);
 				
 				webResponse = this.restClient.postCatalog(catalog);
