@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 import org.yasas.xbase4j.XBase;
 import org.yasas.xbase4j.XBaseFile;
@@ -37,7 +36,7 @@ public class ReaderCatalog {
 		
 		try {
 			
-			reader = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbitems.dbf"));
+			reader = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbitems.dbf"));
 		
 			DBFRow row;
 			
@@ -90,7 +89,7 @@ public class ReaderCatalog {
 			
 			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbitems.dbf"));
+			XBaseFile writer = new XBase().open(new File(Application.DIR_LOCAL_DBF + "wbitems.dbf"));
 			
 			writer.go(getNroRegistro(product));	
 							
@@ -119,7 +118,7 @@ public class ReaderCatalog {
 
 		// create a DBFReader object
 		try {
-			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbitems.dbf"));
+			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbitems.dbf"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

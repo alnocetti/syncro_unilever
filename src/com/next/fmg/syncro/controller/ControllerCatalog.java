@@ -1,13 +1,12 @@
 package com.next.fmg.syncro.controller;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.next.fmg.syncro.fileManager.FileManager;
 import com.next.fmg.syncro.model.Catalog;
 import com.next.fmg.syncro.model.Product;
-import com.next.fmg.syncro.model.RetailerAccount;
 import com.next.fmg.syncro.reader.ReaderCatalog;
 import com.next.fmg.syncro.rest.RestClient;
 import com.next.fmg.syncro.rest.WebResponse;
@@ -37,6 +36,10 @@ public class ControllerCatalog {
 			int particion = 50;
 			
 			System.out.println("<-- postCatalog()");
+			
+			FileManager fileManager = new FileManager();
+			
+			fileManager.localCopy("wbitems.dbf");
 			
 			Catalog catalog = this.reader.readCatalog();
 			if (catalog.getProducts().isEmpty()) {
@@ -68,6 +71,8 @@ public class ControllerCatalog {
 				}
 	        }
 						
+			fileManager.remoteCopy("wbitems.dbf");
+
 			return respuestas;
 		}
 		

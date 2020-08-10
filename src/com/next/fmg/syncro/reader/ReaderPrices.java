@@ -17,7 +17,6 @@ import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.Price;
 import com.next.fmg.syncro.model.PriceList;
 import com.next.fmg.syncro.model.PriceProduct;
-import com.next.fmg.syncro.model.StockProduct;
 
 public class ReaderPrices {
 	
@@ -38,7 +37,7 @@ public class ReaderPrices {
 		
 		try {
 			
-			reader = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbprecio.dbf"));
+			reader = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbprecio.dbf"));
 		
 			DBFRow row;
 						
@@ -134,7 +133,7 @@ public class ReaderPrices {
 			
 			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			
-			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbprecio.dbf"));
+			XBaseFile writer = new XBase().open(new File(Application.DIR_LOCAL_DBF + "wbprecio.dbf"));
 			
 			writer.go(getNroRegistro(ean));	
 							
@@ -163,7 +162,7 @@ public class ReaderPrices {
 
 		// create a DBFReader object
 		try {
-			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbprecio.dbf"));
+			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbprecio.dbf"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

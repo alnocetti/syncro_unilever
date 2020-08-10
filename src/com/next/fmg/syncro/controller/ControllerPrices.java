@@ -4,13 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.next.fmg.syncro.model.Inventory;
+import com.next.fmg.syncro.fileManager.FileManager;
 import com.next.fmg.syncro.model.Price;
 import com.next.fmg.syncro.model.PriceList;
 import com.next.fmg.syncro.model.PriceProduct;
-import com.next.fmg.syncro.model.Product;
-import com.next.fmg.syncro.model.StockProduct;
-import com.next.fmg.syncro.reader.ReaderInventory;
 import com.next.fmg.syncro.reader.ReaderPrices;
 import com.next.fmg.syncro.rest.RestClient;
 import com.next.fmg.syncro.rest.WebResponse;
@@ -40,6 +37,10 @@ public class ControllerPrices {
 			int particion = 50;
 
 			System.out.println("<-- postPrices()");
+			
+			FileManager fileManager = new FileManager();
+			
+			fileManager.localCopy("wbprecio.dbf");
 			
 			PriceList priceList = this.reader.readPriceList();
 			if (priceList.getProducts().isEmpty()) {
@@ -78,7 +79,7 @@ public class ControllerPrices {
 			}
 
 						
-
+			fileManager.remoteCopy("wbprecio.dbf");
 			
 			return respuestas;
 		}

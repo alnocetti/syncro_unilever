@@ -28,7 +28,6 @@ import com.next.fmg.syncro.model.OrderPayment;
 import com.next.fmg.syncro.model.OrderShipping;
 import com.next.fmg.syncro.model.OrderShippingAddress;
 import com.next.fmg.syncro.model.OrderUpdate;
-import com.next.fmg.syncro.model.RetailerAccount;
 import com.next.fmg.syncro.model.SalesOrder;
 
 public class ReaderSalesOrder {
@@ -347,8 +346,6 @@ public class ReaderSalesOrder {
 		
 		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 		
-		SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
 		String file = Application.DIR_DOWNLOAD_FTP + "SalesOrder/" + format.format(new Date()) + "_Sales_Order_Update.json";
 		
 		List<SalesOrder>salesOrders = new ArrayList<SalesOrder>();

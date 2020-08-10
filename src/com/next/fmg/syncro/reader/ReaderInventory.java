@@ -36,7 +36,7 @@ public class ReaderInventory {
 		
 		try {
 			
-			reader = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbstock.dbf"));
+			reader = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbstock.dbf"));
 		
 			DBFRow row;
 			
@@ -77,7 +77,7 @@ public class ReaderInventory {
 			
 			SimpleDateFormat formatAud = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-			XBaseFile writer = new XBase().open(new File(Application.DIR_LECTURA_DBF + "wbstock.dbf"));
+			XBaseFile writer = new XBase().open(new File(Application.DIR_LOCAL_DBF + "wbstock.dbf"));
 			
 			writer.go(getNroRegistro(stockProduct));	
 							
@@ -106,7 +106,7 @@ public class ReaderInventory {
 
 		// create a DBFReader object
 		try {
-			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LECTURA_DBF + "wbstock.dbf"));
+			readerNroRegistro = new DBFReader(new FileInputStream(Application.DIR_LOCAL_DBF + "wbstock.dbf"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
