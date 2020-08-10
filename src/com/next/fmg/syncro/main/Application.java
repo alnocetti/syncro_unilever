@@ -74,7 +74,7 @@ public class Application {
 		
 		//Recepción sales order
 		ControllerSalesOrder.getInstance().downloadSalesOrderFTP();
-		//ControllerSalesOrder.getInstance().downloadSalesOrder();
+		ControllerSalesOrder.getInstance().downloadSalesOrder();
 		
 		// NO SE USA, MAGENTO NO MANDA CAMBIOS DE ESTADO AL ERP
 		////ControllerSalesOrder.getInstance().updateSalesOrder();
