@@ -77,7 +77,7 @@ public class Application {
 		//ControllerSalesOrder.getInstance().downloadSalesOrder();
 		
 		// NO SE USA, MAGENTO NO MANDA CAMBIOS DE ESTADO AL ERP
-		ControllerSalesOrder.getInstance().updateSalesOrder();
+		//ControllerSalesOrder.getInstance().updateSalesOrder();
 	
 	
 		System.out.println("End.");
