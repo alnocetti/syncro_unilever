@@ -1,13 +1,12 @@
 package com.next.fmg.syncro.controller;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.next.fmg.syncro.fileManager.FileManager;
 import com.next.fmg.syncro.model.Catalog;
 import com.next.fmg.syncro.model.Product;
-import com.next.fmg.syncro.model.RetailerAccount;
 import com.next.fmg.syncro.reader.ReaderCatalog;
 import com.next.fmg.syncro.rest.RestClient;
 import com.next.fmg.syncro.rest.WebResponse;
@@ -38,6 +37,10 @@ public class ControllerCatalog {
 			
 			System.out.println("<-- postCatalog()");
 			
+			FileManager fileManager = new FileManager();
+			
+			fileManager.localCopy("wbitems.dbf");
+			
 			Catalog catalog = this.reader.readCatalog();
 			if (catalog.getProducts().isEmpty()) {
 				System.out.println("Nothing to send");
@@ -55,7 +58,7 @@ public class ControllerCatalog {
 				if(i == (Math.floor((products.size() / particion))+1))
 					subProducts = products.subList((i-1) * particion, products.size());
 				else
-					subProducts = products.subList((i-1) * particion, (i * particion) -1);
+					subProducts = products.subList((i-1) * particion, (i * particion));
 				
 				catalog.setProducts(subProducts);
 				
@@ -66,8 +69,17 @@ public class ControllerCatalog {
 					this.reader.saveResponse(product, webResponse.getResponseMessage());
 					
 				}
+				
+				try {
+					Thread.sleep(30*1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 	        }
 						
+			fileManager.remoteCopy("wbitems.dbf");
+
 			return respuestas;
 		}
 		

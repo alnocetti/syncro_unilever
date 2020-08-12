@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.next.fmg.syncro.fileManager.FileManager;
 import com.next.fmg.syncro.model.Inventory;
-import com.next.fmg.syncro.model.Product;
 import com.next.fmg.syncro.model.StockProduct;
 import com.next.fmg.syncro.reader.ReaderInventory;
 import com.next.fmg.syncro.rest.RestClient;
@@ -37,6 +37,10 @@ public class ControllerInventory {
 
 			System.out.println("<-- postInventory()");
 			
+			FileManager fileManager = new FileManager();
+			
+			fileManager.localCopy("wbstock.dbf");
+			
 			Inventory inventory = this.reader.readInventory();
 			if (inventory.getSourceItems().isEmpty()) {
 				System.out.println("Nothing to send");
@@ -54,7 +58,7 @@ public class ControllerInventory {
 				if(i == (Math.floor((products.size() / particion))+1))
 					subProducts = products.subList((i-1) * particion, products.size());
 				else
-					subProducts = products.subList((i-1) * particion, (i * particion) -1);
+					subProducts = products.subList((i-1) * particion, (i * particion));
 				
 				inventory.setSourceItems(subProducts);
 				
@@ -65,9 +69,16 @@ public class ControllerInventory {
 					this.reader.saveResponse(stockProduct, webResponse.getResponseMessage());
 					
 				}
+				
+				try {
+					Thread.sleep(30*1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			
-
+			fileManager.remoteCopy("wbstock.dbf");
 			
 			return respuestas;
 		}

@@ -18,7 +18,6 @@ import com.google.gson.reflect.TypeToken;
 import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.Catalog;
 import com.next.fmg.syncro.model.Inventory;
-import com.next.fmg.syncro.model.Order;
 import com.next.fmg.syncro.model.OrderUpdate;
 import com.next.fmg.syncro.model.PriceList;
 import com.next.fmg.syncro.model.RetailerAccount;
@@ -51,7 +50,7 @@ public class RestClient {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
 			
-			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/retailer/registration/status");//your url i.e fetch data from .
+			url = new URL(Application.URL_RETAILERS);//your url i.e fetch data from .
 			
 			conn = (HttpURLConnection) url.openConnection();
 			
@@ -153,7 +152,7 @@ public class RestClient {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
 			//url = new URL("https://apiuat.unileverservices.com/sigma-magento-v1/sigmaapi/catalogDetail");//your url i.e fetch data from .
-			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/catalog");
+			url = new URL(Application.URL_CATALOG);
 			
 			conn = (HttpURLConnection) url.openConnection();
 			
@@ -261,7 +260,7 @@ public class RestClient {
 		
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
-			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/inventory");
+			url = new URL(Application.URL_INVENTORY);
 			
 			conn = (HttpURLConnection) url.openConnection();
 			
@@ -377,7 +376,7 @@ public class RestClient {
 			
 	//		gson.serializeNulls();
 					
-			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/price");
+			url = new URL(Application.URL_PRICES);
 			conn = (HttpURLConnection) url.openConnection();
 			
 			conn.setRequestMethod("POST");
@@ -488,7 +487,7 @@ public class RestClient {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 					
 			
-			url = new URL("https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/order/status/update");//your url i.e fetch data from .
+			url = new URL(Application.URL_SALES_ORDER_UPDATE);//your url i.e fetch data from .
 
 			conn = (HttpURLConnection) url.openConnection();
 			

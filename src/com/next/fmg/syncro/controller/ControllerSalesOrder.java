@@ -6,10 +6,7 @@ import java.util.List;
 
 import com.next.fmg.syncro.ftp.FtpSalesOrderManager;
 import com.next.fmg.syncro.main.Application;
-import com.next.fmg.syncro.model.Order;
 import com.next.fmg.syncro.model.OrderUpdate;
-import com.next.fmg.syncro.model.RetailerAccount;
-import com.next.fmg.syncro.model.SalesOrder;
 import com.next.fmg.syncro.model.SalesOrderUpdate;
 import com.next.fmg.syncro.reader.ReaderSalesOrder;
 import com.next.fmg.syncro.rest.RestClient;
