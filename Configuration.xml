@@ -9,11 +9,19 @@
 	<DIR_DOWNLOAD_FTP>./json/Downloaded/</DIR_DOWNLOAD_FTP>
 	<DISTRIBUTOR_CODE>10310151</DISTRIBUTOR_CODE>
 	<DIR_LOCAL_DBF>./dbfs/local/</DIR_LOCAL_DBF>
+	
 	<URL_RETAILERS>https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/retailer/registration/status</URL_RETAILERS>
 	<URL_CATALOG>https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/catalog</URL_CATALOG>
 	<URL_INVENTORY>https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/inventory</URL_INVENTORY>
 	<URL_PRICES>https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/price</URL_PRICES>
 	<URL_SALES_ORDER_UPDATE>https://apidev.unileverservices.com:443/swo-ar-publisher-api-v1/erpapi/order/status/update</URL_SALES_ORDER_UPDATE>
-<!-- 	<FILE>dtpedcab.dbf</FILE> -->
-<!-- 	<FILE>dtpedcpo.dbf</FILE> -->
+	
+	<FTP_URL>ftp.disanmi.net</FTP_URL>
+	<!-- Produccion -->
+	<FTP_USER>u153383246.magento</FTP_USER>
+	<FTP_PASSWORD>biiBO5Ms</FTP_PASSWORD>
+	<!-- Testing -->
+<!-- 	<FTP_USER>	</FTP_USER> -->
+<!-- 	<FTP_PASSWORD>j8u8z!WKu@R</FTP_PASSWORD> -->
+	
 </Empresa>

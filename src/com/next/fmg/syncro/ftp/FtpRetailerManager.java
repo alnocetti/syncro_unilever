@@ -24,9 +24,9 @@ public class FtpRetailerManager {
 		
 		
 	       try {
-	            client.connect("ftp.disanmi.net");
+	            client.connect(Application.FTP_URL);
 	            
-	            client.login("u153383246.magento", "biiBO5Ms");
+	            client.login(Application.FTP_USER, Application.FTP_PASSWORD);
 	            
 	            client.setControlEncoding("UTF-8");
 	            

@@ -28,6 +28,9 @@ public class Application {
 	public static String URL_PRICES;
 	public static String URL_SALES_ORDER_UPDATE;
 	
+	public static String FTP_USER;
+	public static String FTP_PASSWORD;
+	public static String FTP_URL;
 	
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		// TODO Auto-generated method stub
@@ -52,6 +55,9 @@ public class Application {
 		URL_PRICES = doc.getElementsByTagName("URL_PRICES").item(0).getTextContent();
 		URL_SALES_ORDER_UPDATE = doc.getElementsByTagName("URL_SALES_ORDER_UPDATE").item(0).getTextContent();
 
+		FTP_URL = doc.getElementsByTagName("FTP_URL").item(0).getTextContent();
+		FTP_USER = doc.getElementsByTagName("FTP_USER").item(0).getTextContent();
+		FTP_PASSWORD = doc.getElementsByTagName("FTP_PASSWORD").item(0).getTextContent();
 		
 		//Retailers va envio y recepción en un mismo jar
 		////Envio retailers
