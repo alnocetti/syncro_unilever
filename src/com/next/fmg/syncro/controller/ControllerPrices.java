@@ -60,7 +60,7 @@ public class ControllerPrices {
 				if(i == (Math.floor((products.size() / particion))+1))
 					subProducts = products.subList((i-1) * particion, products.size());
 				else
-					subProducts = products.subList((i-1) * particion, (i * particion) -1);
+					subProducts = products.subList((i-1) * particion, (i * particion));
 
 				priceList.setProducts(subProducts);
 				
@@ -75,6 +75,13 @@ public class ControllerPrices {
 						this.reader.saveResponse(price, priceProduct.getEAN(),webResponse.getResponseMessage());
 					}
 					
+				}
+				
+				try {
+					Thread.sleep(30*1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			}
 

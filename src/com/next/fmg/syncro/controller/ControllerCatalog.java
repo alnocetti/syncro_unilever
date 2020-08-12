@@ -58,7 +58,7 @@ public class ControllerCatalog {
 				if(i == (Math.floor((products.size() / particion))+1))
 					subProducts = products.subList((i-1) * particion, products.size());
 				else
-					subProducts = products.subList((i-1) * particion, (i * particion) -1);
+					subProducts = products.subList((i-1) * particion, (i * particion));
 				
 				catalog.setProducts(subProducts);
 				
@@ -68,6 +68,13 @@ public class ControllerCatalog {
 					System.out.println("Grabando respuesta producto: " + product.getName_prod());
 					this.reader.saveResponse(product, webResponse.getResponseMessage());
 					
+				}
+				
+				try {
+					Thread.sleep(30*1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 	        }
 						
