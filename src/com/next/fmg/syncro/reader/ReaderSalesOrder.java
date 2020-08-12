@@ -275,7 +275,7 @@ public class ReaderSalesOrder {
 					
 					while ((rowItemChanged = readerItemsChanged.nextRow()) != null) {
 						
-						if(rowItemChanged.getString("chgordid").equals(order.getOrder_id())) {
+						if(rowItemChanged.getString("chgordid").equals(order.getOrder_id()) && rowItemChanged.getString("chgordstat").equals(order.getStatus())) {
 							
 							order.addItemChanged(rowItemChanged.getString("chgordean"), rowItemChanged.getString("chgordreas"));
 							
