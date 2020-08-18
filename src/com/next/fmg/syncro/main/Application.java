@@ -9,7 +9,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import com.next.fmg.syncro.controller.ControllerInventory;
+import com.next.fmg.syncro.controller.ControllerRetailers;
 
 public class Application {
 
@@ -61,16 +61,16 @@ public class Application {
 		
 		//Retailers va envio y recepción en un mismo jar
 		////Envio retailers
-		//ControllerRetailers.getInstance().postRetailers();
+		ControllerRetailers.getInstance().postRetailers();
 		////Recepción retailers
-		//ControllerRetailers.getInstance().downloadRetailersFTP();
-		//ControllerRetailers.getInstance().downloadRetailers();
+		ControllerRetailers.getInstance().downloadRetailersFTP();
+		ControllerRetailers.getInstance().downloadRetailers();
 		
 		//Envio catalogo
 		//ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
-		ControllerInventory.getInstance().postInventory();
+		//ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
 		//ControllerPrices.getInstance().postPrices();

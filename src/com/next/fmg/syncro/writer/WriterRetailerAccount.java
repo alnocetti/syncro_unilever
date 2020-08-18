@@ -147,7 +147,7 @@ public class WriterRetailerAccount {
 //			   row.getString("CLIPAIS").equals(retailer.getCountry()) &&
 			   row.getString("CLIPOSTAL").equals(retailer.getPostal_code()) &&
 			   row.getString("CLITELEF").equals(retailer.getPhone_number()) &&
-			   row.getString("CLITELEX").equals(retailer.getMobile_number()) &&
+			   row.getString("CLITELEX").equals(retailer.getMobile_number()) ||
 			   row.getString("CLIMAIL").equals(retailer.getEmail())
 //			   row.getString("CLINOMBRE").equals(retailer.getFirstname()) &&
 //			   row.getString("CLIAPELLI").equals(retailer.getSurname())
