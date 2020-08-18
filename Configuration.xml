@@ -18,10 +18,10 @@
 	
 	<FTP_URL>ftp.disanmi.net</FTP_URL>
 	<!-- Produccion -->
-	<FTP_USER>u153383246.magento</FTP_USER>
-	<FTP_PASSWORD>biiBO5Ms</FTP_PASSWORD>
+<!-- 	<FTP_USER>u153383246.magento</FTP_USER> -->
+<!-- 	<FTP_PASSWORD>biiBO5Ms</FTP_PASSWORD> -->
 	<!-- Testing -->
-<!-- 	<FTP_USER>	</FTP_USER> -->
-<!-- 	<FTP_PASSWORD>j8u8z!WKu@R</FTP_PASSWORD> -->
+	<FTP_USER>u153383246.magento_test</FTP_USER>
+	<FTP_PASSWORD>j8u8z!WKu@R</FTP_PASSWORD>
 	
 </Empresa>

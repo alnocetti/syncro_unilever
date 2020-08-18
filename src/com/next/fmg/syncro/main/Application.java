@@ -9,7 +9,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import com.next.fmg.syncro.controller.ControllerSalesOrder;
+import com.next.fmg.syncro.controller.ControllerInventory;
 
 public class Application {
 
@@ -70,7 +70,7 @@ public class Application {
 		//ControllerCatalog.getInstance().postCatalog();
 		
 		//Envio inventario
-		//ControllerInventory.getInstance().postInventory();
+		ControllerInventory.getInstance().postInventory();
 		
 		//Envio precios
 		//ControllerPrices.getInstance().postPrices();
