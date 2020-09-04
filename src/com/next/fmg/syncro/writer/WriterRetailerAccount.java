@@ -17,6 +17,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.linuxense.javadbf.DBFReader;
 import com.linuxense.javadbf.DBFRow;
+import com.linuxense.javadbf.DBFUtils;
 import com.linuxense.javadbf.DBFWriter;
 import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.RetailerAccount;
@@ -136,28 +137,33 @@ public class WriterRetailerAccount {
 			if(
 //			   row.getString("CLICODDIS").equals(retailer.getDistributor_code()) &&
 //			   row.getString("CLIRAZSOC").equals(retailer.getProperty_name()) &&
-			   row.getString("CLICUIT").equals(retailer.getCuit_dni_id()) &&
-			   row.getInt("CLITABCUIT")==Integer.valueOf(retailer.getDocument_type_id()) &&
+//			   row.getString("CLICUIT").equals(retailer.getCuit_dni_id()) &&
+//			   row.getInt("CLITABCUIT")==Integer.valueOf(retailer.getDocument_type_id()) &&
 //			   row.getString("CLIIIBB").equals(retailer.getIngresos_brutos()) &&
 //			   row.getString("CLIDOMICI").equals(retailer.getStreet()) &&
-			   row.getString("CLIALTURA").equals(retailer.getNumber()) &&		   
+//			   row.getString("CLIALTURA").equals(retailer.getNumber()) &&		   
 //			   row.getString("CLILOCALI").equals(retailer.getNeighborhood()) &&
 //			   row.getString("CLIPARTIDO").equals(retailer.getDistrict()) &&
 //			   row.getString("CLIPROVIN").equals(retailer.getProvince()) &&
 //			   row.getString("CLIPAIS").equals(retailer.getCountry()) &&
-			   row.getString("CLIPOSTAL").equals(retailer.getPostal_code()) &&
-			   row.getString("CLITELEF").equals(retailer.getPhone_number()) &&
-			   row.getString("CLITELEX").equals(retailer.getMobile_number()) ||
+//			   row.getString("CLIPOSTAL").equals(retailer.getPostal_code()) &&
+//			   row.getString("CLITELEF").equals(retailer.getPhone_number()) &&
+//			   row.getString("CLITELEX").equals(retailer.getMobile_number()) ||
 			   row.getString("CLIMAIL").equals(retailer.getEmail())
 //			   row.getString("CLINOMBRE").equals(retailer.getFirstname()) &&
 //			   row.getString("CLIAPELLI").equals(retailer.getSurname())
 					) {
+				
+				DBFUtils.close(reader);
+
 				
 				return true;
 				
 			}
 			
 		}
+		
+		DBFUtils.close(reader);
 		
 		return false;
 	}

@@ -10,6 +10,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 import com.next.fmg.syncro.controller.ControllerRetailers;
+import com.next.fmg.syncro.controller.ControllerSalesOrder;
 
 public class Application {
 
@@ -61,10 +62,10 @@ public class Application {
 		
 		//Retailers va envio y recepción en un mismo jar
 		////Envio retailers
-		ControllerRetailers.getInstance().postRetailers();
+		//ControllerRetailers.getInstance().postRetailers();
 		////Recepción retailers
-		ControllerRetailers.getInstance().downloadRetailersFTP();
-		ControllerRetailers.getInstance().downloadRetailers();
+		//ControllerRetailers.getInstance().downloadRetailersFTP();
+		//ControllerRetailers.getInstance().downloadRetailers();
 		
 		//Envio catalogo
 		//ControllerCatalog.getInstance().postCatalog();

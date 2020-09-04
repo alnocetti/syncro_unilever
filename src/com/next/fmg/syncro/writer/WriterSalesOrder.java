@@ -17,6 +17,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.linuxense.javadbf.DBFReader;
 import com.linuxense.javadbf.DBFRow;
+import com.linuxense.javadbf.DBFUtils;
 import com.linuxense.javadbf.DBFWriter;
 import com.next.fmg.syncro.main.Application;
 import com.next.fmg.syncro.model.Order;
@@ -165,12 +166,15 @@ public class WriterSalesOrder {
 		while ((row = reader.nextRow()) != null) {
 			if(row.getString("ordid").equals(order.getOrder_id())) {
 				
+				DBFUtils.close(reader);
+				
 				return true;
 				
 			}
 			
 		}
-		
+		DBFUtils.close(reader);
+
 		return false;
 	}
 

@@ -158,7 +158,7 @@ public class ReaderRetailerAccount {
 
 		while ((row = readerNroRegistro.nextRow()) != null) {
 					
-			if(row.getString("CLIENVNEXT").equals(ra.getStore_id_ERP()) && row.getString("CLICUIT").equals(ra.getCuit_dni_id())) {
+			if(row.getString("CLIENVNEXT").equals(ra.getStore_id_ERP()) && row.getString("CLICUIT").equals(ra.getCuit_dni_id()) && row.getString("CLIMAIL").equals(ra.getEmail())) {
 				
 				return registro;
 				
